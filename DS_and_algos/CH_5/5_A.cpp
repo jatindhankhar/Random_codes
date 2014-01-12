@@ -4,7 +4,7 @@
    Author: Jatin Dhankhar
    LICENSE: BSD
    11 Jan,2014 Sat 5:11 PM
-   */
+*/
 # include<iostream>
 using namespace std;
 
@@ -13,11 +13,13 @@ void print_odd(int n )
     if(n>=1)
     {
         if(n%2!=0)
-        {print_odd(n-2);
-        cout<<n<<" ";}
+        {
+            print_odd(n-2);
+            cout<<n<<" ";
+        }
 
         else
-        print_odd(n-1);
+            print_odd(n-1);
     }
 }
 int main()
