@@ -10,16 +10,17 @@ using namespace std;
 
 void print_odd(int n )
 {
-   if(n>=1)
-    {if(n%2!=0)
-     {
-         cout<<n<<" ";
-         print_odd(n-2);
-     }
-  else
-  print_odd(n-1);
+    if(n>=1)
+    {
+        if(n%2!=0)
+        {
+            cout<<n<<" ";
+            print_odd(n-2);
+        }
+        else
+            print_odd(n-1);
 
-}
+    }
 }
 int main()
 {
