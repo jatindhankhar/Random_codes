@@ -100,7 +100,6 @@ int main()
     s1.display();
     system("sleep 1.5");
     s1.pop();
-    system("Now Popping");
     system("clear");
     s1.display();
     system("sleep 1.5");
