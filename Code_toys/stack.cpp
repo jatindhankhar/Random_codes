@@ -100,6 +100,10 @@ int main()
     s1.display();
     system("sleep 1.5");
     s1.pop();
+<<<<<<< HEAD
+=======
+    system("Now Popping");
+>>>>>>> 6a025436fb1aec9937f582fda5e30782f44e0590
     system("clear");
     s1.display();
     system("sleep 1.5");
