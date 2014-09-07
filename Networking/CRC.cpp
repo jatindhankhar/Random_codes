@@ -17,8 +17,10 @@ int main()
      if(pow(2,i) <= gx)
         deg++;
    }
+cout<<" Gx is = "<<bi_gx<<"\n";
 cout<<"Degree is "<<deg<<"\n";
 bitset<16> shifted_bi_tx = bi_tx << deg;
 cout<<"Original Tx was = "<<bi_tx<<"\n";
 cout<<"Shifted TX was ="<<shifted_bi_tx<<"\n";
+bitset<deg> test = (gx,0,4);
 }
