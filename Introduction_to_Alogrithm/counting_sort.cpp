@@ -1,8 +1,7 @@
 # include <bits/stdc++.h>
 using namespace std;
-int main()
+auto counting_sort(const vector<int> &input_array)
 {
-    vector<int> input_array = {INT_MIN,6,0,2,0,1,3,4,6,1,3,2};
     vector<int> sorted_array(input_array.size());
     vector<int> temp_array(*max_element(begin(input_array),end(input_array))+1);
     for(auto val : input_array)
@@ -24,14 +23,16 @@ int main()
         temp_array[*it] -= 1;
     }
     sorted_array.erase(begin(sorted_array));
+    return sorted_array;
+}
+int main()
+{
+    vector<int> input_array = {INT_MIN,6,0,2,0,1,3,4,6,1,3,2};
+
     cout<<"Sorted array is ";
-    for(auto i : sorted_array)
+    for(auto i : counting_sort(input_array))
     {
         cout<<i<<" ";
     }
     cout<<endl;
-input_array.erase(begin(input_array));
-stable_sort(begin(input_array),end(input_array));
-cout<<"Answer should be ";
-for(auto i : input_array) cout<<i<<" ";
 }
