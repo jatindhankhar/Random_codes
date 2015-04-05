@@ -22,7 +22,7 @@ void heapify(vector<int> &arr,int parent_index,int limit)
 void heapsort(vector<int> &arr,int limit)
 {
     /* Make the heap*/
-    for(int i=limit; i >0; i--)
+    for(int i=floor(limit/2); i >0; i--)
         heapify(arr,i,limit);
     /* Take root (maximum element) put it in the last, then build heap again
      Rinse and repeat */
